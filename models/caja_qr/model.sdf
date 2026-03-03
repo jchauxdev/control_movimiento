@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="caja_qr">
+    <static>true</static>
+    <link name="link">
+
+      <visual name="visual_pared">
+        <pose>0 0 0.15 0 0 0</pose>
+        <geometry>
+          <box><size>0.05 1.0 0.3</size></box>
+        </geometry>
+        <material>
+          <ambient>0.7 0.7 0.7 1</ambient> </material>
+      </visual>
+      <collision name="collision_pared">
+        <pose>0 0 0.15 0 0 0</pose>
+        <geometry>
+          <box><size>0.05 1.0 0.3</size></box>
+        </geometry>
+      </collision>
+
+      <visual name="visual_qr">
+        <pose>0.026 0 0.15 0 1.5708 0</pose>
+        <geometry>
+          <box><size>0.08 0.08 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://caja_qr/materials/scripts</uri>
+            <uri>model://caja_qr/materials/textures</uri>
+            <name>CodigoQR</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision_qr">
+        <pose>0.026 0 0.15 0 1.5708 0</pose>
+        <geometry>
+          <box><size>0.08 0.08 0.01</size></box>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

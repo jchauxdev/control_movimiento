@@ -1,0 +1,16 @@
+<launch>
+
+  <arg name="distancia_pared" default="2.0"/>
+
+  <env name="GAZEBO_MODEL_PATH" value="$(find control_movimiento)/models:$(optenv GAZEBO_MODEL_PATH)" />
+  
+  <include file="$(find control_movimiento)/launch/mundo_vacio_gazebo.launch">
+    <arg name="model" value="waffle"/>
+  </include>
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_pared_qr"
+      args="-file $(find control_movimiento)/models/caja_qr/model.sdf -sdf -model pared_logistica -x $(arg distancia_pared) -y 0 -z 0 -Y 3.1416" />
+
+  <node pkg="control_movimiento" type="lector_qr.py" name="navegar_qr_nodo" output="screen" />
+
+</launch>

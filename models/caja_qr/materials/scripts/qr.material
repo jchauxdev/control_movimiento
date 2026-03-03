@@ -1,0 +1,13 @@
+material CodigoQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture qr-parar.png
+      }
+    }
+  }
+}
