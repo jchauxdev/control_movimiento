@@ -25,7 +25,7 @@ para el doctorado en Ingeniería de la UAM - Universidad Autónoma de Manizales
 
 3. Clona este repositorio:
     ```bash
-    git clone [https://github.com/TU_USUARIO/control_movimiento.git](https://github.com/TU_USUARIO/control_movimiento.git)
+    git clone [https://github.com/jchauxdev/control_movimiento.git](https://github.com/jchauxdev/control_movimiento.git)
 
 3. Instala las dependencias del sistema y de Python necesarias (como cv_bridge y pyzbar). Utiliza rosdep en la raíz de tu espacio de trabajo para resolver dependencias de ROS, y pip3 para la librería de visión:
 
