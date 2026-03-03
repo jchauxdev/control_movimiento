@@ -2,6 +2,9 @@
 
 Este paquete de ROS (Noetic) implementa un sistema de navegación autónoma para un TurtleBot3 en entornos logísticos simulados en Gazebo. El robot avanza de forma eficiente, utiliza su sensor LiDAR para detenerse a una distancia segura de los obstáculos y procesa códigos QR a través de su cámara RGB para tomar decisiones de enrutamiento dinámico (Izquierda, Derecha o Parar).
 
+Proyecto desarrollo por Julian Rene Chaux en el marco del proyecto de investigación
+para el doctorado en Ingeniería de la UAM - Universidad Autónoma de Manizales 
+
 ## Requisitos Previos
 
 * Ubuntu 20.04
