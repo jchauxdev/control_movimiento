@@ -52,7 +52,7 @@ El paquete incluye un archivo launch general que levanta el entorno de Gazebo, i
 Asegúrate de exportar el modelo del robot antes de lanzar:
 
     export TURTLEBOT3_MODEL=waffle
-    roslaunch control_movimiento main_proyecto.launch distancia_pared:=2.5
+    roslaunch control_movimiento robot_project.launch distancia_pared:=2.5
 
 Nota 1: Si es la primera vez que ejecuta el comando, probablemente le saldrá un error, por lo tanto, debe escribir el paquete a mano y luego con tabulador autocompletar.
 
