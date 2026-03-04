@@ -54,7 +54,8 @@ Asegúrate de exportar el modelo del robot antes de lanzar:
     export TURTLEBOT3_MODEL=waffle
     roslaunch control_movimiento main_proyecto.launch distancia_pared:=2.5
 
-Nota: Puedes modificar el parámetro distancia_pared al vuelo para cambiar la posición inicial de la pared logística frente al robot. Por ejemplo: distancia_pared:=3.5.
+Nota 1: Si es la primera vez que ejecuta el comando, probablemente le saldrá un error, por lo tanto, debe escribir el paquete a mano y luego con tabulador autocompletar.
+Nota 2: Puedes modificar el parámetro distancia_pared al vuelo para cambiar la posición inicial de la pared logística frente al robot. Por ejemplo: distancia_pared:=3.5.
 
 ##  Personalización de Comandos (Códigos QR)
 El robot responde a texturas de códigos QR específicas. Por defecto, el sistema reconoce tres comandos en texto plano:
